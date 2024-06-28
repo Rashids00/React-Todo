@@ -51,7 +51,7 @@ const TodoItem = ({ todo, handleComplete, handleDelete, handleEdit }) => {
       setEditDescription(description);
     };
 
-    const handleViewClick = () => {
+    const handleView = () => {
       setShowDescriptionModal(true);
     };
   
@@ -67,7 +67,7 @@ const TodoItem = ({ todo, handleComplete, handleDelete, handleEdit }) => {
             />
             <p className={`flex-1 ${completed ? 'line-through text-gray-500' : 'text-gray-700'}`}>{text}</p>
             <button
-              onClick={handleViewClick}
+              onClick={handleView}
               className="text-green-500 hover:text-green-700 mr-2"
             >
               View
